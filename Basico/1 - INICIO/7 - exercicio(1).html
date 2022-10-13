@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <!-- Nesse exercício faremos um cálculo simples de idade usando while e prompt-->
+
+        <script>
+            var anoNascimento = prompt("Informe o ano do seu nacimento");
+            var anoAtual = prompt("Informe o ano atual");
+
+
+            // Validaddo as informações 
+
+            while(anoNascimento >= anoAtual){
+                alert("Número inválido. Tente novamente!")
+                anoNascimento = prompt("Informe o ano do seu nacimento");
+                anoAtual = prompt("Informe o ano atual");
+            }
+
+            //Se tudo estiver de acordo o calculo será feito!
+            
+            var calculoIdade = anoAtual - anoNascimento;
+
+            alert("Sua idade é: " + calculoIdade);
+
+        </script>
+    </body>
+</html>

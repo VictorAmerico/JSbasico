@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <!-- Nesse exercício faremos um cálculadora dinâmica-->
+
+        <script>
+        
+        var numeroIncial = prompt("Informe o número inicial: ");
+
+        var sinal = prompt("Informe o sinal a ser utilizado:")
+
+        while(sinal != '-' && sinal != '+' && sinal != '/' && sinal != '*'){
+            alert("Sinal inválido!. Informe novamente")
+            sinal = prompt("Informe o sinal a ser utilizado:")
+        }
+        
+        var numeroFinal = prompt("Informe o número final: ");
+        //Teremos que transformar as entradads de dados em numerais, pois estão sendo lidas como strint
+
+        numeroIncial = parseFloat(numeroIncial);
+        numeroFinal = parseFloat(numeroFinal);
+
+
+        resultadoFinal = 0;
+
+        if(sinal == '-'){
+            resultadoFinal = numeroIncial - numeroFinal;
+        }else if(sinal == '+'){
+            resultadoFinal = numeroIncial + numeroFinal;
+        }else if(sinal == '/'){
+            resultadoFinal =  numeroIncial / numeroFinal;
+        }else if(sinal == '*'){
+            resultadoFinal =  numeroIncial * numeroFinal;
+        }
+
+        alert("O resultado final deu: " + resultadoFinal)
+        </script>
+    </body>
+</html>
